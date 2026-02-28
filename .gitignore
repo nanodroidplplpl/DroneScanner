@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local virtualenvs
+.venv/
+venv/
+env/
+
+# Local logs / captures (do not version)
+dane*.jsonl
+info*.jsonl
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# ESP-IDF build artifacts (even outside scan/)
+**/build/
+**/.idf/
+managed_components/
+.espressif/
+

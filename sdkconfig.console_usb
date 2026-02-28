@@ -1,0 +1,11 @@
+# Opcjonalna konfiguracja: konsola przez USB Serial JTAG zamiast UART
+# Użyj gdy zapis do portu (CONFIG, GET_DATA) nie działa - może pomóc na płytkach z USB
+#
+# Aby zastosować:
+# 1. Skopiuj te linie do scan/sdkconfig (zastąp odpowiednie sekcje)
+# 2. Lub uruchom: cd scan && idf.py menuconfig
+#    Component config -> ESP System Settings -> Channel for console output
+#    -> USB Serial/JTAG Controller
+#
+# CONFIG_ESP_CONSOLE_UART_DEFAULT=n
+# CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
